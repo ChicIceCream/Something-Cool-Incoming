@@ -1,0 +1,32 @@
+{
+  "camera": {
+    "index": 0
+  },
+  "object_detection": {
+    "model_path": "models/yolov8m.onnx",
+    "classes_path": "coco.names",
+    "confidence_threshold": 0.4,
+    "nms_threshold": 0.45,
+    "input_width": 640,
+    "input_height": 640
+  },
+  "speech": {
+    "voice_command_key": "v",
+    "intent_confidence_threshold": 0.5,
+    "ambient_noise_duration": 2.0,
+    "listen_timeout": 5,
+    "phrase_time_limit": 10,
+    "intents": {
+        "describe": "describe what is in the image",
+        "count": "count objects",
+        "unknown": "unknown query"
+    }
+  },
+  "tracking": {
+    "enabled": true,
+    "track_thresh": 0.25,
+    "track_buffer": 30,
+    "match_thresh": 0.8,
+    "frame_rate": 30 
+  }
+} 

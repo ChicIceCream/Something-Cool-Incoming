@@ -1,0 +1,34 @@
+# Core Computer Vision
+opencv-python>=4.8.0
+numpy>=1.24.0
+Pillow>=9.0.0       # For displaying images in Tkinter GUI
+
+# Object Detection (YOLOv8)
+ultralytics>=8.0.0
+onnx==1.14.0        # Pinned due to potential Windows DLL issues
+onnxruntime>=1.15.0 # Or onnxruntime-gpu if you have a compatible NVIDIA GPU and CUDA setup
+
+# Tracking & Visualization Helper
+supervision>=0.17.0 # For ByteTrack integration and easy annotation
+
+# Speech Recognition & Synthesis
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+# PyAudio might require system dependencies (like portaudio)
+# On Windows, consider installing via wheel or using Conda:
+# conda install pyaudio
+PyAudio>=0.2.11
+
+# NLP (Intent Classification)
+transformers>=4.30.0
+# PyTorch is required by the Hugging Face pipeline
+# For CPU-only:
+# torch>=2.0.0
+# For CUDA GPU (replace cuXXX with your CUDA version e.g., cu118 or cu121):
+# torch>=2.0.0 --index-url https://download.pytorch.org/whl/cuXXX
+# Alternatively, install via Conda for easier CUDA handling:
+# conda install pytorch torchvision torchaudio pytorch-cuda=XX.X -c pytorch -c nvidia
+torch>=2.0.0
+
+# Configuration File Handling
+PyYAML>=6.0 # Although we used json, PyYAML is common for config and good to have 
