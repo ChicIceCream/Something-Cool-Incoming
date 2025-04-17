@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, scrolledtext
 import cv2
 from PIL import Image, ImageTk
-import threading
+import threadingtrial.c
 import time
 import queue
 import json
