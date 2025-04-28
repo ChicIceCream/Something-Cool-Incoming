@@ -5,8 +5,6 @@ from PIL import Image, ImageTk
 import threadingtrial.c
 import time
 import queue
-import json
-import os
 import supervision as sv
 
 # Import your existing modules
